@@ -1,5 +1,9 @@
 package Contract;
 
+import Domain.Object.Resposta;
+
+import java.util.List;
+
 public interface Consulta {
-    void SalvarConsulta();
+    List<Resposta> getAllRespostas();
 }

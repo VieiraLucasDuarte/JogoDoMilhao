@@ -1,0 +1,4 @@
+1;Lucas;1;true;
+2;Sim;1;false;
+3;não;1;false;
+4;yes;1;false;
