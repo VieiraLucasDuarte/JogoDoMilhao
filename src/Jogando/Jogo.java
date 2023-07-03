@@ -24,6 +24,7 @@ public class Jogo {
         while (jogando) {
             System.out.println("Nivel 1 - Perguntas acumulam 1000 reais");
             boolean compete1 = true;
+            Boolean compete2 = true;
             System.out.println("Qual seu nome?");
             String nome = scan1.nextLine();
             Player player = new Player( 1,nome, 0);
@@ -55,7 +56,6 @@ public class Jogo {
                 }
                 compete1 = false;
             }
-
             while(compete2) {
                 System.out.println("Parte2");
             }
