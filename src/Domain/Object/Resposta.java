@@ -2,12 +2,14 @@ package Domain.Object;
 
 public class Resposta {
     private int Id;
+    private String Opcao;
     private String Resposta;
     private int Pergunta;
     private boolean Certo;
 
-    public Resposta(int id, String resposta, int pergunta, boolean certo) {
+    public Resposta(int id, String opcao, String resposta, int pergunta, boolean certo) {
         Id = id;
+        Opcao = opcao;
         Resposta = resposta;
         Pergunta = pergunta;
         Certo = certo;
@@ -15,6 +17,14 @@ public class Resposta {
 
     public int getId() {
         return Id;
+    }
+
+    public String getOpcao() {
+        return Opcao;
+    }
+
+    public void setOpcao(String opcao) {
+        Opcao = opcao;
     }
 
     public void setId(int id) {

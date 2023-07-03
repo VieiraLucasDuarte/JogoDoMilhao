@@ -4,11 +4,13 @@ public class Pergunta {
     private int Id;
     private String Texto;
     private boolean Perguntado;
+    private int NivelPergunta;
 
-    public Pergunta(int id, String texto, boolean perguntado) {
+    public Pergunta(int id, String texto, boolean perguntado, int Nivel) {
         Id = id;
         Texto = texto;
         Perguntado = perguntado;
+        NivelPergunta = Nivel;
     }
 
     public int getId() {
@@ -23,6 +25,10 @@ public class Pergunta {
         return Texto;
     }
 
+    public int getNivelPergunta() {
+        return NivelPergunta;
+    }
+
     public void setTexto(String texto) {
         Texto = texto;
     }
@@ -33,5 +39,8 @@ public class Pergunta {
 
     public void setPerguntado(boolean perguntado) {
         Perguntado = perguntado;
+    }
+    public void setNivelPergunta(int nivel) {
+        NivelPergunta = nivel;
     }
 }

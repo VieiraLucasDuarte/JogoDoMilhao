@@ -1,10 +1,18 @@
-import Contract.Consulta;
+import Contract.Resposta;
+import Jogando.Jogo;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Consulta consultarContract;
-        System.out.println("Jogo do Milhão");
-
+        Jogo jogar = new Jogo();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Qual modo voce que Jogar. S/N");
+        String modo = scan.nextLine();
+        if(modo.equals("S"))
+        {
+            jogar.Jogar();
+        }
 
         //corrigir essa situação da inicialização da interface
 
