@@ -38,5 +38,32 @@
 38;B;Juscelino Kubitschek;10;false;
 39;C;Marechal Deodoro da Fonseca;10;true;
 40;D;Fernando Henrique Cardoso;10;false;
-
+41;A;Oceano Atlântico;11;false;
+42;B;Oceano Índico;11;false;
+43;C;Oceano Pacífico;11;true;
+44;D;Oceano Ártico;11;false;
+45;A;Isaac Newton;12;false;
+46;B;Albert Einstein;12;true;
+47;C;Nikola Tesla;12;false;
+48;D;Galileu Galilei;12;false;
+49;A;Fêmur;13;true;
+50;B;Crânio;13;false;
+51;C;Úmero;13;false;
+52;D;Tíbia;13;false;
+53;A;Neil Armstrong;14;true;
+54;B;Buzz Aldrin;14;false;
+55;C;Yuri Gagarin;14;false;
+56;D;Alan Shepard;14;false;
+57;A;Berlim;15;false;
+58;B;Paris;15;true;
+59;C;Londres;15;false;
+60;D;Roma;15;false;
+61;A;H2O;16;true;
+62;B;CO2;16;false;
+63;C;NaCl;16;false;
+64;D;C6H12O6;16;false;
+65;A;Michelangelo;17;false;
+66;B;Leonardo da Vinci;17;true;
+67;C;Rafael Sanzio;17;false;
+68;D;Sandro Botticelli;17;false;
 
