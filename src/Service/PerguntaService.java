@@ -1,4 +1,4 @@
-package FileManipulation.Repository;
+package Service;
 
 import Contract.Pergunta;
 
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PerguntaFile implements Pergunta {
+public class PerguntaService implements Pergunta {
     public List<Domain.Object.Pergunta> getAllPerguntas() {
         String arquivo = "C:\\Users\\Lucas\\projetos\\JogoDoMilhao\\Db\\perguntas.txt";
         List<Domain.Object.Pergunta> perguntas = new ArrayList<>();
@@ -31,5 +31,9 @@ public class PerguntaFile implements Pergunta {
         }
         System.out.println(perguntas.get(0) +  "  Lisitnhas");
         return perguntas;
+    }
+
+    public List<Domain.Object.Pergunta> getAllPergByNivel(int nivel) {
+        return getAllPerguntas().stream().filter(x -> x.getNivelPergunta() == nivel).toList();
     }
 }

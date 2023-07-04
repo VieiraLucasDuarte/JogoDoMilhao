@@ -1,4 +1,4 @@
-package FileManipulation.Repository;
+package Service;
 
 import Contract.Resposta;
 
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RespostaFile implements Resposta {
+public class RespostaService implements Resposta {
 
     public List<Domain.Object.Resposta> getAllRespostas() {
         String arquivo = "C:\\Users\\Lucas\\projetos\\JogoDoMilhao\\Db\\respostas.txt";
@@ -32,5 +32,9 @@ public class RespostaFile implements Resposta {
             System.out.println("Tente abrir denovo o arquivo");
         }
         return respostas;
+    }
+
+    public List<Domain.Object.Resposta> getAllRespByPerg(int pergunta) {
+        return getAllRespostas().stream().filter(x -> x.getPergunta() == pergunta).toList();
     }
 }
