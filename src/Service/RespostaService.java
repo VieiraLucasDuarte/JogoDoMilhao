@@ -1,7 +1,6 @@
-package Servico;
+package Service;
 
-import Contrato.RespostaContrato;
-import Domain.Objeto.RespostaDomain;
+import Contract.Resposta;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,11 +8,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RespostaContratoService implements RespostaContrato {
+public class RespostaService implements Resposta {
 
-    public List<RespostaDomain> getAllRespostas() {
+    public List<Domain.Object.Resposta> getAllRespostas() {
         String arquivo = "C:\\Users\\Lucas\\projetos\\JogoDoMilhao\\Db\\respostas.txt";
-        List<RespostaDomain> respostaDomains = new ArrayList<>();
+        List<Domain.Object.Resposta> respostas = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(arquivo))) {
             String linha;
             while ((linha = br.readLine()) != null) {
@@ -25,17 +24,17 @@ public class RespostaContratoService implements RespostaContrato {
                     int idPergunta = Integer.parseInt(partes[3]);
                     boolean certo = Boolean.parseBoolean(partes[4]);
 
-                    RespostaDomain respostaDomain = new RespostaDomain(id, opcao, texto, idPergunta, certo);
-                    respostaDomains.add(respostaDomain);
+                    Domain.Object.Resposta resposta = new Domain.Object.Resposta(id, opcao, texto, idPergunta, certo);
+                    respostas.add(resposta);
                 }
             }
         } catch (IOException e) {
             System.out.println("Tente abrir denovo o arquivo");
         }
-        return respostaDomains;
+        return respostas;
     }
 
-    public List<RespostaDomain> getAllRespByPerg(int pergunta) {
+    public List<Domain.Object.Resposta> getAllRespByPerg(int pergunta) {
         return getAllRespostas().stream().filter(x -> x.getPergunta() == pergunta).toList();
     }
 }

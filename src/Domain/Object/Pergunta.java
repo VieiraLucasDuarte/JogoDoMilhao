@@ -1,12 +1,12 @@
-package Domain.Objeto;
+package Domain.Object;
 
-public class PerguntaDomain {
+public class Pergunta {
     private int Id;
     private String Texto;
     private boolean Perguntado;
     private int NivelPergunta;
 
-    public PerguntaDomain(int id, String texto, boolean perguntado, int Nivel) {
+    public Pergunta(int id, String texto, boolean perguntado, int Nivel) {
         Id = id;
         Texto = texto;
         Perguntado = perguntado;
