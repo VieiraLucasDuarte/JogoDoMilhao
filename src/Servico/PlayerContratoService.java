@@ -1,28 +1,29 @@
-package Service;
+package Servico;
 
-import Contract.Player;
+import Contrato.PlayerContrato;
+import Domain.Objeto.PlayerDomain;
 
 import java.util.Scanner;
 
-public class PlayerService implements Player {
+public class PlayerContratoService implements PlayerContrato {
 
-    public Domain.Object.Player CalculoValor(int niveis, Domain.Object.Player player) {
+    public PlayerDomain CalculoValor(int niveis, PlayerDomain playerDomain) {
         if (niveis == 1) {
-            double valor = player.getDinheiro();
-            player.setDinheiro(valor + 1000);
+            double valor = playerDomain.getDinheiro();
+            playerDomain.setDinheiro(valor + 1000);
         } else if (niveis == 2) {
-            double valor = player.getDinheiro();
-            player.setDinheiro(valor + 10000);
+            double valor = playerDomain.getDinheiro();
+            playerDomain.setDinheiro(valor + 10000);
         } else if (niveis == 3) {
-            double valor = player.getDinheiro();
-            player.setDinheiro(valor + 100000);
+            double valor = playerDomain.getDinheiro();
+            playerDomain.setDinheiro(valor + 100000);
         }
-        return player;
+        return playerDomain;
     }
 
-    public boolean ValidaContinua(Domain.Object.Player player) {
+    public boolean ValidaContinua(PlayerDomain playerDomain) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Você tem " + player.getDinheiro() + " ainda quer continuar jogando?");
+        System.out.println("Você tem " + playerDomain.getDinheiro() + " ainda quer continuar jogando?");
         System.out.println("Para parar de jogar digite 1");
         System.out.println("Para continuar aperte qualquer tecla");
         String continua = scan.nextLine();

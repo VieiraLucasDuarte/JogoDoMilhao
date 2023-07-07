@@ -1,11 +1,8 @@
-import Contract.Resposta;
-import Jogando.Jogo;
-
-import java.util.Scanner;
+import Jogando.Geral;
 
 public class Main {
     public static void main(String[] args) {
-        Jogo jogar = new Jogo();
+        Geral jogar = new Geral();
         jogar.Jogar();
     }
 }

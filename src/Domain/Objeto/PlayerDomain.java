@@ -1,11 +1,11 @@
-package Domain.Object;
+package Domain.Objeto;
 
-public class Player {
+public class PlayerDomain {
     private int Codigo;
     private String Nome;
     private double Dinheiro;
 
-    public Player(int codigo, String nome, double dinheiro) {
+    public PlayerDomain(int codigo, String nome, double dinheiro) {
         Codigo = codigo;
         Nome = nome;
         Dinheiro = dinheiro;

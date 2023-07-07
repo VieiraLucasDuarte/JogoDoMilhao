@@ -1,13 +1,13 @@
-package Domain.Object;
+package Domain.Objeto;
 
-public class Resposta {
+public class RespostaDomain {
     private int Id;
     private String Opcao;
     private String Resposta;
     private int Pergunta;
     private boolean Certo;
 
-    public Resposta(int id, String opcao, String resposta, int pergunta, boolean certo) {
+    public RespostaDomain(int id, String opcao, String resposta, int pergunta, boolean certo) {
         Id = id;
         Opcao = opcao;
         Resposta = resposta;
