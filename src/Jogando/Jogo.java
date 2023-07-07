@@ -21,7 +21,7 @@ public class Jogo {
         List<Domain.Object.Resposta> respostas = _resposta.getAllRespostas();
 
         while (jogando) {
-            System.out.println("Nivel 1 - Perguntas acumulam 1000 reais");
+            System.out.println("Nivel 1 - Perguntas acumulam 1000 reais.");
             boolean compete1 = true;
             boolean compete2 = false;
             boolean compete3 = false;
