@@ -29,7 +29,6 @@ public class PerguntaService implements Pergunta {
         } catch (IOException e) {
             System.out.println("Tente abrir denovo o arquivo");
         }
-        System.out.println(perguntas.get(0) +  "  Lisitnhas");
         return perguntas;
     }
 
