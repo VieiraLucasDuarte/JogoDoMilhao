@@ -36,7 +36,7 @@
 36;D;Bogotá;9;false;
 37;A;Getúlio Vargas;10;false;
 38;B;Juscelino Kubitschek;10;false;
-39;C;Marechal Deodoro da Fonseca;10;true;
+39;C;Marechal Deodoro da Fonseca.;10;true;
 40;D;Fernando Henrique Cardoso;10;false;
 
 

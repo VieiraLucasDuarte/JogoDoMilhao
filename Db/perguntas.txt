@@ -13,4 +13,4 @@
 13;Qual é o maior osso do corpo humano?false;2
 14;Quem foi o primeiro homem a pisar na Lua?false;2
 15;Qual é a capital da França?o?false;2
-16;Qual é a fórmula química da água?false;2
+16;Qual é a fórmula química da água?false;3
